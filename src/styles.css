@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Sans", ui-sans-serif, monospace;
+
+  --color-bg: #07090d;
+  --color-surface: #10141b;
+  --color-surface-2: #171d27;
+  --color-fg: #e6edf5;
+  --color-muted: #8b97a8;
+  --color-subtle: #5c6778;
+  --color-accent: #8ec8d4;
+  --color-accent-fg: #071015;
+  --color-border: color-mix(in oklab, #e6edf5 12%, transparent);
+  --color-border-strong: color-mix(in oklab, #e6edf5 22%, transparent);
+  --color-danger: #c97b7b;
+  --color-danger-fg: #1a0c0c;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html,
+  body,
+  #app {
+    height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  * {
+    min-width: 0;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

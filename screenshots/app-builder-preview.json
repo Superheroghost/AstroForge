@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "AstroForge: Dyson Protocol",
+      "hasCanvas": true,
+      "bodyTextLen": 1113,
+      "bodyTextHash": "99019fd6ae52ffd4c972e7ac58af35e4c8821f9b5cdd54c46485b18deeef21c1",
+      "bodyTextPrefix": "STELLAR FOUNDRY AstroForge DYSON PROTOCOL Mine the belt. Refine ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "AstroForge: Dyson Protocol",
+      "hasCanvas": true,
+      "bodyTextLen": 1113,
+      "bodyTextHash": "99019fd6ae52ffd4c972e7ac58af35e4c8821f9b5cdd54c46485b18deeef21c1",
+      "bodyTextPrefix": "STELLAR FOUNDRY AstroForge DYSON PROTOCOL Mine the belt. Refine ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
